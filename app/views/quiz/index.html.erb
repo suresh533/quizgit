@@ -1,0 +1,14 @@
+<%= stylesheet_link_tag "style.css" %>
+<h1>Start Quiz</h1>
+
+<%= form_tag({:controller => "quiz",
+				  :action => "start"}) do %>
+  
+  <div class="center">
+	 <%= submit_tag "Start!", :class => "submit"%>
+  </div>
+<% end %>
+
+<% content_for(:title) do %>
+  Start Quiz
+<% end %>
